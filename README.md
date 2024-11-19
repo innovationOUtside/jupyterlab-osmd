@@ -1,8 +1,11 @@
 # jupyterlab_osmd
 
-[![Github Actions Status](https://github.com/innovationOUtside/jupyterlab-osmd/workflows/Build/badge.svg)](https://github.com/innovationOUtside/jupyterlab-osmd/actions/workflows/build.yml)
 
-JupyterLab mime renderer for OpenSheetMusicDisplay
+First attempt at JupyterLab mime renderer for MusicXML (`.muscixml` / minme type `application/vnd.recordare.musicxml` ) using [OpenSheetMusicDisplay](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/)
+
+*Works a bit...*
+
+![](images/screenshot.png)
 
 ## Requirements
 

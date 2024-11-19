@@ -44,7 +44,7 @@ export class OSMDWidget extends Widget implements IRenderMime.IRenderer {
 
     // Apply styles to make the container scrollable
     osmdContainer.style.overflowY = 'auto';
-    osmdContainer.style.maxHeight = '400px';
+    osmdContainer.style.maxHeight = '700px';
     osmdContainer.style.border = '1px solid #ccc';
     osmdContainer.style.padding = '10px';
 
