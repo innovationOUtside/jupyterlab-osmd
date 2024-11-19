@@ -1,11 +1,33 @@
 # jupyterlab_osmd
 
-
 First attempt at JupyterLab mime renderer for MusicXML (`.muscixml` / minme type `application/vnd.recordare.musicxml` ) using [OpenSheetMusicDisplay](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/)
 
 *Works a bit...*
 
 ![](images/screenshot.png)
+
+`pip install jupyterlab-osmd`
+
+Double click on a `.musicxml` file in the JupyterLab file browser and it should render using OSMD.
+
+Python API:
+
+```python
+def OSMD(data=''):
+    bundle = {}
+    bundle['application/vnd.recordare.musicxml'] = data
+    display(bundle, raw=True)
+
+# Also available as:
+# from jupyterlab_osmd import OSMD
+
+with open("Downloads/xmlsamples/Telemann.musicxml", 'r') as f:
+    d = f.read()
+
+OSMD(d)
+```
+
+but it gives an error: *`Error loading music score`*?
 
 ## Requirements
 

@@ -1,3 +1,5 @@
+from IPython.display import display
+
 try:
     from ._version import __version__
 except ImportError:
@@ -14,3 +16,8 @@ def _jupyter_labextension_paths():
         "src": "labextension",
         "dest": "jupyterlab-osmd"
     }]
+
+def OSMD(data=""):
+    bundle = {}
+    bundle["application/vnd.recordare.musicxml"] = data
+    display(bundle, raw=True)
