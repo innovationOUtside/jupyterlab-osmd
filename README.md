@@ -13,21 +13,24 @@ Double click on a `.musicxml` file in the JupyterLab file browser and it should 
 Python API:
 
 ```python
+# Minimally
 def OSMD(data=''):
     bundle = {}
     bundle['application/vnd.recordare.musicxml'] = data
     display(bundle, raw=True)
 
-# Also available as:
-# from jupyterlab_osmd import OSMD
+# A far more elaborate version available as:
+#from jupyterlab_osmd import OSMD
+# This supports:
+# - MusicXML string
+# - path to .musicxml or compressed .mxl file
+# - URL to musicxml file
 
 with open("Downloads/xmlsamples/Telemann.musicxml", 'r') as f:
     d = f.read()
 
 OSMD(d)
 ```
-
-but it gives an error: *`Error loading music score`*?
 
 ## Requirements
 
