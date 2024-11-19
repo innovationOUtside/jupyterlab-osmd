@@ -52,30 +52,22 @@ To remove the extension, execute:
 pip uninstall jupyterlab_osmd
 ```
 
-## Contributing
-
-### Development install
-
-Note: You will need NodeJS to build the extension package.
-
-The `jlpm` command is JupyterLab's pinned version of
-[yarn](https://yarnpkg.com/) that is installed with JupyterLab. You may use
-`yarn` or `npm` in lieu of `jlpm` below.
+### Build
 
 ```bash
-# Clone the repo to your local environment
-# Change directory to the jupyterlab_osmd directory
-# Install package in development mode
-pip install -e "."
 # Install required node packages
 npm install --save opensheetmusicdisplay uuid
 # Install package requirements
 jlpm install 
 # Rebuild extension Typescript source after making changes
 jlpm build
+# Install package in development mode
+#pip install -e "."
+# Install package
+pip install .
 ```
 
-Build package:
+Build Python package:
 
 `python -m build .`
 
