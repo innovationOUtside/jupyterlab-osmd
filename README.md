@@ -1,6 +1,8 @@
 # jupyterlab_osmd
 
-First attempt at JupyterLab mime renderer for MusicXML (`.muscixml` / mime type `application/vnd.recordare.musicxml` ) using [OpenSheetMusicDisplay](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/). *See also [MusicXML Renderer for JupyterLab Extension using OpenSheetMusicDisplay (OSMD)](https://blog.ouseful.info/2024/11/20/musicxml-renderer-for-jupterlab-extension/).*
+First attempt at JupyterLab mime renderer for MusicXML (`.muscixml` / mime type `application/vnd.recordare.musicxml` ) using [OpenSheetMusicDisplay](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/).
+
+*Related blog post: [MusicXML Renderer for JupyterLab Extension using OpenSheetMusicDisplay (OSMD)](https://blog.ouseful.info/2024/11/20/musicxml-renderer-for-jupterlab-extension/).*
 
 *Works a bit...*
 
